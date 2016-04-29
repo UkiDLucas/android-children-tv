@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/video_list_item_high_rating">
+    </item>
+    <item>
+        <bitmap android:src="@drawable/texture_background"
+                android:tileMode="repeat"
+                android:dither="true"/>
+    </item>
+</layer-list>

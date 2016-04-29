@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/content_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contribution_popup_bkg">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/header_bg"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:scaleType="centerInside"
+                android:src="@drawable/header_logo" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/content_padding"
+                android:paddingRight="@dimen/content_padding"
+                android:paddingTop="@dimen/contribution_popup_padding_top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/contribution_popup_text1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/contribution_popup_text_1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/contribution_popup_text2"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/contribution_popup_text_2" />
+
+                    <Button
+                        android:id="@+id/btn_contribute"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/contribution_popup_button_selector"
+                        android:text="@string/btn_donate"
+                        android:textColor="@drawable/contribution_popup_button_text"
+                        android:textSize="@dimen/contribution_popup_text_1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/contribution_popup_text3"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/contribution_popup_text_2"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/contribution_popup_button_selector"
+                        android:text="@string/btn_share"
+                        android:textColor="@drawable/contribution_popup_button_text"
+                        android:textSize="@dimen/contribution_popup_text_1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/contribution_popup_text4"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/contribution_popup_text_2"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/contribution_popup_button_selector"
+                        android:enabled="false"
+                        android:text="@string/btn_cancel"
+                        android:textColor="@drawable/contribution_popup_button_text"
+                        android:textSize="@dimen/contribution_popup_text_1"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/contribution_popup_back_image" />
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

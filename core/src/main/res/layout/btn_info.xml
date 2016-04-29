@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.cyberwalkabout.common.widget.CustomFontButton
+        android:id="@+id/btn_info"
+        custom:typeface="DroidSansBold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_height"
+        android:background="@drawable/filter_item_bkg"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="5dp"
+        android:shadowColor="#544300"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="0.5"
+        android:text="@string/btn_info"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+</RelativeLayout>
+

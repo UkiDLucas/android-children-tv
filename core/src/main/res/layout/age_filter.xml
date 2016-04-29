@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/filter_background"
+              android:orientation="vertical">
+
+    <com.cyberwalkabout.common.widget.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/filter_header_bkg"
+        android:gravity="center"
+        android:shadowColor="#544300"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="0.5"
+        android:text="@string/age_filter_title"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        custom:typeface="DroidSansBold.ttf"/>
+
+    <ListView
+        android:id="@+id/age_groups_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"/>
+
+</LinearLayout>

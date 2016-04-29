@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlideExpandableListView">
+        <attr name="list_mode">
+            <flag name="single" value="0"/>
+            <flag name="multiple" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AccordionView">
+        <attr name="sectionIds" format="reference"/>
+        <attr name="sectionHeadersIds" format="reference"/>
+        <attr name="expanded" format="boolean"/>
+        <attr name="animation_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedButtonsRow">
+        <attr name="titles" format="reference"/>
+        <attr name="vals" format="reference"/>
+        <attr name="active_button_drawable" format="reference"/>
+        <attr name="passive_button_drawable" format="reference"/>
+        <attr name="button_bg" format="reference"/>
+        <attr name="buttons_divider" format="reference"/>
+        <attr name="selectedPosition" format="integer"/>
+        <attr name="defaultTextColor" format="color"/>
+        <attr name="activeTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="typeface" format="string"/>
+        <attr name="textStrokeColor" format="color"/>
+        <attr name="textStrokeWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color"/>
+        <attr name="innerShadowRadius" format="float"/>
+        <attr name="innerShadowDx" format="float"/>
+        <attr name="innerShadowDy" format="float"/>
+
+        <attr name="outerShadowColor" format="color"/>
+        <attr name="outerShadowRadius" format="float"/>
+        <attr name="outerShadowDx" format="float"/>
+        <attr name="outerShadowDy" format="float"/>
+
+        <attr name="fontname" format="string" />
+
+        <attr name="foregroundcolor" format="reference|color"/>
+        <attr name="backgroundcolor" format="reference|color"/>
+
+        <attr name="MagicTextView_strokeWidth" format="float" />
+        <attr name="strokeMiter" format="float" />
+        <attr name="MagicTextView_strokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

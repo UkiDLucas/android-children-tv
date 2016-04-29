@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sliding_menu_width">250dp</dimen>
+
+    <!-- Splash screen -->
+    <dimen name="splash_text_size">18dp</dimen>
+    <dimen name="logo_bottom_margin">75dp</dimen>
+    <dimen name="splash_text_bottom_margin">15dp</dimen>
+
+    <!-- Info screen -->
+    <dimen name="info_screen_text_size">20dp</dimen>
+
+</resources>

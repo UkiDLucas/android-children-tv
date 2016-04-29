@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:gravity="center"
+                android:text="@string/info_text"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_suggest_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Suggest Video"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Feedback"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_share_this_app"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Share this App"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_rate_this_app"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Rate this App"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_tutorial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Tutorial"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btn_facebook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Facebook Page"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+
+            <Button
+                android:id="@+id/btn_donate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/orange_button_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/buy_subscription"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/info_screen_text_size"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CyberWalkAbout.com"
+                android:textColor="@drawable/color_selector"
+                android:textSize="@dimen/info_screen_text_size"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

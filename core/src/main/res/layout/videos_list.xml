@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f9feda"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp">
+
+        <EditText
+            android:id="@+id/txt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_bkg"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:drawablePadding="5dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="22dp"
+            android:paddingTop="3dp"
+            android:textColor="@android:color/primary_text_light" />
+
+        <ImageButton
+            android:id="@+id/btn_clear_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:src="@drawable/ic_clear_search" />
+
+    </FrameLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+    <ListView
+        android:id="@+id/videos_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:divider="@drawable/divider"
+        android:dividerHeight="3dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@drawable/video_list_item_selector"
+        android:paddingTop="48dp"
+        android:scrollbars="none" />
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <com.google.android.libraries.cast.companionlibrary.widgets.MiniController
+        android:id="@+id/miniController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow7"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/empty_videos_list"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

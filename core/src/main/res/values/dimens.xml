@@ -1,0 +1,30 @@
+<resources>
+
+    <dimen name="sliding_menu_width">220dp</dimen>
+
+    <dimen name="shadow_width">15dp</dimen>
+
+    <dimen name="contribution_popup_padding_top">16dp</dimen>
+    <dimen name="contribution_popup_padding_bottom">5dp</dimen>
+    <dimen name="contribution_popup_text__margin">15dp</dimen>
+    <dimen name="contribution_popup_text_1">18sp</dimen>
+    <dimen name="contribution_popup_text_2">14sp</dimen>
+
+    <!-- Info screen -->
+    <dimen name="info_screen_text_size">18dp</dimen>
+
+    <!-- Splash screen -->
+    <dimen name="splash_text_size">14dp</dimen>
+    <dimen name="logo_bottom_margin">25dp</dimen>
+    <dimen name="splash_text_bottom_margin">5dp</dimen>
+
+    <dimen name="widget_height">48dp</dimen>
+    <dimen name="header_height">53dp</dimen>
+    <dimen name="divider_height">3dp</dimen>
+
+    <dimen name="content_padding">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

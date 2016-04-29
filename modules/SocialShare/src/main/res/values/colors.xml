@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="details_blue">#6699ff</color>
+    <color name="dialog_bg">#bb000000</color>
+    <color name="share_status_default">#F1F1F1</color>
+    <color name="share_status_twitter">#E22525</color>
+
+    <color name="semitransparent_black">#8f000000</color>
+    <color name="group_bg">#0070A4</color>
+
+</resources>

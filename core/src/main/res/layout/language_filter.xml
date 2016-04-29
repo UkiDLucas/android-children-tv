@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/filter_background">
+
+    <com.cyberwalkabout.common.widget.CustomFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/language_filter_title"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        custom:typeface="DroidSansBold.ttf"
+        android:shadowColor="#544300"
+        android:shadowRadius="0.5"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:background="@drawable/filter_header_bkg"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/languages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fillViewport="true"
+        android:background="@color/dialog_bg">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp">
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                style="@style/Dialog">
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/tvTitle"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/share_status_default"/>
+
+            <EditText
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext"
+                    android:layout_width="fill_parent"/>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvStatus"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/share_status_default"
+                    android:paddingLeft="4dp"/>
+
+            <Button
+                    style="@style/Button"
+                    android:id="@+id/btnShare"
+                    android:text="@string/share"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

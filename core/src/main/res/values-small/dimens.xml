@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <dimen name="contribution_popup_padding_top">30dp</dimen>
+    <dimen name="contribution_popup_padding_bottom">5dp</dimen>
+    <dimen name="contribution_popup_text__margin">10dp</dimen>
+    <dimen name="contribution_popup_text_1">16sp</dimen>
+    <dimen name="contribution_popup_text_2">12sp</dimen>
+</resources>

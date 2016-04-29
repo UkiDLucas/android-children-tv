@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/series_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:dividerHeight="3dp"
+        android:listSelector="@drawable/video_list_item_selector"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="none"
+        android:fastScrollEnabled="true"
+        android:fadingEdge="none"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"/>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="@string/empty_videos_list"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

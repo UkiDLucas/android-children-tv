@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tutorial_background"
+            android:scaleType="centerCrop"/>
+
+    <FrameLayout
+            android:id="@+id/pager_indicator_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp">
+
+        <com.viewpagerindicator.IconPageIndicator
+                android:id="@+id/indicator"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"/>
+
+        <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:typeface="sans"
+                android:textSize="18dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@null"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_vertical|right"/>
+
+    </FrameLayout>
+
+    <com.cyberwalkabout.youtube.lib.CustomViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/pager_indicator_container"/>
+
+</RelativeLayout>

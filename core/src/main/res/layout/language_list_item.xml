@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/widget_height"
+        android:gravity="center_vertical"
+        android:background="@drawable/filter_item_bkg"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/language_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.cyberwalkabout.common.widget.CustomFontTextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:typeface="DroidSansBold.ttf"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox_selector"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/content"
+        android:layout_alignBottom="@id/content"/>
+</RelativeLayout>

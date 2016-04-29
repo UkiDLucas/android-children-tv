@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_key">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYAlo5cXtl+85shHLrxK2UT3VLwzJAeQSG15pbpSe7pELErzw5cjgefOChTEuLE1GPXo6t++MTtBDToocN0GTqQE1n0XjWajB63fuUzXwFnXC8GXKhF5neU5gL9cFXmoe4JEP3ca7YnFsfHpZ3yuhEf/rgFPOOt+cD/Ip8svcptQIDAQAB</string>
+
+    <!-- ABOUT US PAGE SETTINGS -->
+    <string name="cyberwalkabout_page_url">http://cyberwalkabout.com</string>
+    <string name="feedback_email">info@cyberwalkabout.com</string>
+    <string name="video_submision_form_url">http://cyberwalkabout.com/2015/10/childrentv-video-submission.html</string>
+    <string name="facebook_page_url">https://www.facebook.com/ChildrenTVapp</string>
+
+    <!-- TWITTER SHARE SETTINGS -->
+    <string name="twitter_callback_url">http://dominiquelucas.com/</string>
+    <string name="twitter_consumer_secret">3qgyVcrQDPPLspFbhejFgdoakHZ68hLO5So8JEn2Ms</string>
+    <string name="twitter_consumer_key">J3syAIdTCnHl7RzTDGgD9A</string>
+
+    <!-- FACEBOOK SETTINGS -->
+    <string name="facebook_app_id">649727981739925</string>
+    <string name="facebook_app_secret">b3f8fc04524c02d77a745811cfc01bee</string>
+    <string name="facebook_callback_url">http://dominiquelucas.com/fb</string>
+
+    <string name="app_market_url_short">http://bit.ly/19gHtoE</string>
+
+    <!-- TUTORIAL SETTINGS -->
+    <string-array name="tutorial_images">
+        <item>tutorial_1</item>
+        <item>tutorial_2</item>
+        <item>tutorial_4</item>
+        <item>tutorial_5</item>
+        <item>tutorial_6</item>
+        <item>tutorial_3</item>
+    </string-array>
+    <string-array name="tutorial_descriptions">
+        <item>This application is provided to you for free and can be used for free as long as you like, however you will be asked occasionally to contribute once a year $0.99 which will help us maintain the list of videoEntities. Videos require periodic reviews and rating.</item>
+        <item>You can use search to find your favorite videoEntities. Not all videoEntities are available as some of the studios do not want to share their movies. If you know videoEntities on YouTube you would want us to add you can do it easily via a form we provide.</item>
+        <item>You can select videoEntities by age group appropriate for your child. Just click on the icon in top left corner.</item>
+        <item>Select language that is appropriate for your child. This is also a great way for you to brush up on a language you have studied!</item>
+        <item>Suggest videoEntities that your kids like.</item>
+        <item>Series of shows are grouped together for your convenience.</item>
+    </string-array>
+</resources>
