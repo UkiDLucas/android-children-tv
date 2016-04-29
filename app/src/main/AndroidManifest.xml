@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chicagoandroid.childrentv">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.cyberwalkabout.youtube.lib.app.ChildrenTVApp"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.AllVideosScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.SeriesScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.Favorites"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.AboutUs"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.PlayerViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.TutorialScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.chicagoandroid.sns.ShareListActivity"
+            android:theme="@style/ShareListStyle" />
+        <activity
+            android:name="com.chicagoandroid.sns.ShareActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.chicagoandroid.sns.TwitterOAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.chicagoandroid.sns.FacebookOAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name="com.cyberwalkabout.youtube.lib.SubmitVideoActivity"
+            android:label="@string/title_activity_submit_video"
+            android:theme="@style/AppTheme.Base.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="youtu.be"
+                    android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.cyberwalkabout.youtube.lib.data.DataLoadService" />
+
+        <receiver android:name="com.cyberwalkabout.youtube.lib.data.DataLoadReceiver">
+            <intent-filter>
+                <action android:name="com.chicagoandroid.childrentv.app.UPDATE_DATA" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cyberwalkabout.youtube.lib.data.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cyberwalkabout.youtube.lib.data.ConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cyberwalkabout.youtube.lib.subscription.SubscriptionNotificationReceiver" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Google cast -->
+        <activity
+            android:name="com.google.android.libraries.cast.companionlibrary.cast.player.VideoCastControllerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.cyberwalkabout.youtube.lib.AllVideosScreen"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cyberwalkabout.youtube.lib.AllVideosScreen" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.google.android.libraries.cast.companionlibrary.remotecontrol.VideoIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.toggleplayback" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.stop" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.libraries.cast.companionlibrary.notification.VideoCastNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.toggleplayback" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.stop" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.notificationvisibility" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.libraries.cast.companionlibrary.cast.reconnection.ReconnectionService" />
+
+    </application>
+
+</manifest>

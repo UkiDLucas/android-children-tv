@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    def apkPrefix = "ChildrenTV"
+
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 47
+        versionName "47"
+
+        multiDexEnabled = true
+    }
+
+    signingConfigs {
+        release {
+            storeFile android.signingConfigs.debug.storeFile
+            storePassword android.signingConfigs.debug.storePassword
+            keyAlias android.signingConfigs.debug.keyAlias
+            keyPassword android.signingConfigs.debug.keyPassword
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    // rename the apk with version name e.g. ChildrenTV-47.apk
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def newName = apkPrefix + "-" + output.outputFile.name.replace(".apk", "-${variant.versionCode}.apk");
+            output.outputFile = new File(output.outputFile.parent, newName)
+        }
+    }
+}
+
+dependencies {
+    compile project(':core')
+}
+
+task initReleaseConfig << {
+
+    def propertiesFile = "signing_prod.properties"
+
+    if (project.hasProperty("configFile")) {
+        propertiesFile = configFile
+    }
+
+    Properties props = new Properties()
+    props.load(new FileInputStream(file(propertiesFile)))
+
+    if (props.containsKey("storeFile") && props.storeFile?.trim()) {
+        android.signingConfigs.release.storeFile = file(props.storeFile)
+    } else if (System.console() != null) {
+        android.signingConfigs.release.storeFile = file(System.console().readLine("\n\$ Enter keystore path: "))
+    }
+
+    if (props.containsKey("storePassword") && props.storePassword?.trim()) {
+        android.signingConfigs.release.storePassword = props.storePassword
+    } else if (System.console() != null) {
+        android.signingConfigs.release.storePassword = new String(System.console().readPassword("\n\$ Enter keystore password: "))
+    }
+
+    if (props.containsKey("keyAlias") && props.keyAlias?.trim()) {
+        android.signingConfigs.release.keyAlias = props.keyAlias
+    } else if (System.console() != null) {
+        android.signingConfigs.release.keyAlias = System.console().readLine("\n\$ Enter key alias: ")
+    }
+
+    if (props.containsKey("keyPassword") && props.keyPassword?.trim()) {
+        android.signingConfigs.release.keyPassword = props.keyPassword
+    } else if (System.console() != null) {
+        android.signingConfigs.release.keyPassword = new String(System.console().readPassword("\n\$ Enter key password: "))
+    }
+}
+
+tasks.whenTaskAdded { theTask ->
+    if (theTask.name.equals("packageRelease")) {
+        theTask.dependsOn "initReleaseConfig"
+    }
+}
