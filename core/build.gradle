@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 22
+
+        multiDexEnabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+}
+
+dependencies {
+    // required to display left and right sliding menu (consider to substitute with default android navigation drawer)
+    compile project(':CastCompanionLibrary')
+    compile project(':SlidingMenu')
+    compile project(':SocialShare')
+    compile project(':Commons')
+    // required for tutorial screen
+    compile project(':ViewPagerIndicator')
+    compile project(path: ':backend', configuration: 'android-endpoints')
+    compile project(':shared')
+
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:support-v4:22.1.1'
+
+    // with Google Cloud Endpoints and Chromecast lib we hit dex limit of 65K classes
+    // http://developer.android.com/tools/building/multidex.html
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    // logging
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'org.slf4j:slf4j-android:1.7.12'
+
+    compile files('libs/annotations-21.1.jar')
+    compile files('libs/bugsense-3.6.jar')
+    //compile files('libs/flurryagent-3.1.0.jar')
+    compile files('libs/FlurryAnalytics-6.1.0.jar')
+    compile files('libs/ormlite-android-4.43.jar')
+    compile files('libs/ormlite-core-4.43.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile files('libs/merge-1.0.1.jar')
+    compile files('libs/sacklist-1.0.0.jar')
+}

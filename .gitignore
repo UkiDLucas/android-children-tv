@@ -38,3 +38,5 @@ captures/
 # security problems need to be addressed first
 FlurryAnalytics.java
 config.xml
+*.properties
+*.keystore
