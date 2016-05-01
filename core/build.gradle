@@ -1,21 +1,16 @@
 apply plugin: 'com.android.library'
-
-repositories {
-    mavenCentral()
-}
+// this will build Andoir *.arr file
+//
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
-
-    lintOptions {
-        abortOnError false
-    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        minSdkVersion 11
-        targetSdkVersion 22
-
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled = true
     }
 
@@ -26,11 +21,19 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+
     // required to display left and right sliding menu (consider to substitute with default android navigation drawer)
-    compile project(':CastCompanionLibrary')
+    //compile project(':CastCompanionLibrary')
     compile project(':SlidingMenu')
     compile project(':SocialShare')
     compile project(':Commons')
@@ -39,8 +42,7 @@ dependencies {
     compile project(path: ':backend', configuration: 'android-endpoints')
     compile project(':shared')
 
-    compile 'com.android.support:appcompat-v7:22.1.1'
-    compile 'com.android.support:support-v4:22.1.1'
+    //compile 'com.android.support:support-v4:22.1.1'
 
     // with Google Cloud Endpoints and Chromecast lib we hit dex limit of 65K classes
     // http://developer.android.com/tools/building/multidex.html
@@ -53,13 +55,13 @@ dependencies {
     compile 'org.slf4j:slf4j-api:1.7.12'
     compile 'org.slf4j:slf4j-android:1.7.12'
 
-    compile files('libs/annotations-21.1.jar')
-    compile files('libs/bugsense-3.6.jar')
+//    compile files('libs/annotations-21.1.jar')
+//    compile files('libs/bugsense-3.6.jar')
     //compile files('libs/flurryagent-3.1.0.jar')
-    compile files('libs/FlurryAnalytics-6.1.0.jar')
-    compile files('libs/ormlite-android-4.43.jar')
-    compile files('libs/ormlite-core-4.43.jar')
-    compile files('libs/YouTubeAndroidPlayerApi.jar')
-    compile files('libs/merge-1.0.1.jar')
-    compile files('libs/sacklist-1.0.0.jar')
+//    compile files('libs/FlurryAnalytics-6.1.0.jar')
+//    compile files('libs/ormlite-android-4.43.jar')
+//    compile files('libs/ormlite-core-4.43.jar')
+//    compile files('libs/YouTubeAndroidPlayerApi.jar')
+//    compile files('libs/merge-1.0.1.jar')
+//    compile files('libs/sacklist-1.0.0.jar')
 }
