@@ -1,6 +1,6 @@
 # # ChildrenTV
 
-ChildrenTV is a very sucessful Android app with over 745,000 installs. The original idea for the app was that we did not want my daughter to be browsing YouTube unsupervised and only watch age-appropriate content. At the same time we wanted to selecte cartoons with particular language for child to get additional exposure. 
+ChildrenTV is a very sucessful Android app with over 745,000 download to date. The original idea for the app was that we did not want my daughter to be browsing YouTube unsupervised and only watch age-appropriate content. At the same time we wanted to selecte cartoons with particular language for child to get additional exposure. 
 
 ![ChildrenTV downloads](images/Screenshot 2016-04-30 21.50.42.png)
 
