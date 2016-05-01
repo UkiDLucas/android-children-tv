@@ -1,12 +1,15 @@
-
 package pub.uki.social.util;
+/**
+ * @since UkiDLucas
+ */
 
 import android.app.Activity;
 import android.os.Looper;
 import android.widget.Toast;
-import pub.uki.social.R;
+
+import com.google.appengine.repackaged.org.apache.commons.httpclient.HttpClient;
+
 import org.apache.http.HttpVersion;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.ClientConnectionManager;
@@ -26,6 +29,8 @@ import org.apache.http.protocol.HTTP;
 import java.net.SocketException;
 import java.net.URI;
 import java.net.UnknownHostException;
+
+import pub.uki.sns.R;
 
 public class HttpHelper {
 
@@ -57,7 +62,9 @@ public class HttpHelper {
         HttpConnectionParams.setConnectionTimeout(params, 30000);
         HttpConnectionParams.setSoTimeout(params, 30000);
 
-        client = new DefaultHttpClient(cm, params);
+        // TODO Uki: fix me
+       // client = new DefaultHttpClient(cm, params);
+
 
         // client = new DefaultHttpClient();
         httpget = new HttpGet();
@@ -65,32 +72,34 @@ public class HttpHelper {
     }
 
     public String getPage(String link, Activity activity) {
-        try {
-            httpget.setURI(URI.create(link));
-            return client.execute(httpget, responseHandler);
-        } catch (UnknownHostException e) {
-            HttpHelper.showInternetConnectionError(activity);
-        } catch (SocketException e) {
-            HttpHelper.showInternetConnectionError(activity);
-        } catch (Exception e) {
-            e.printStackTrace();
-            activity.finish();
-        }
+        //TODO Uki: fix me client.execute
+//        try {
+//            httpget.setURI(URI.create(link));
+//            return client.execute(httpget, responseHandler);
+//        } catch (UnknownHostException e) {
+//            HttpHelper.showInternetConnectionError(activity);
+//        } catch (SocketException e) {
+//            HttpHelper.showInternetConnectionError(activity);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            activity.finish();
+//        }
         return "";
     }
 
     public String doPost(HttpPost httpost, Activity activity) {
         String response = "";
-        try {
-            response = client.execute(httpost, responseHandler);
-        } catch (UnknownHostException e) {
-            HttpHelper.showInternetConnectionError(activity);
-        } catch (SocketException e) {
-            HttpHelper.showInternetConnectionError(activity);
-        } catch (Exception e) {
-            e.printStackTrace();
-            activity.finish();
-        }
+        //TODO Uki: fix me client.execute
+//        try {
+//            response = client.execute(httpost, responseHandler);
+//        } catch (UnknownHostException e) {
+//            HttpHelper.showInternetConnectionError(activity);
+//        } catch (SocketException e) {
+//            HttpHelper.showInternetConnectionError(activity);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            activity.finish();
+//        }
         return response;
     }
 
