@@ -23,8 +23,8 @@ import com.cyberwalkabout.youtube.lib.app.ChildrenTVApp;
 
 import java.text.DateFormat;
 import java.util.Date;
+import com.cyberwalkabout.youtube.lib.R;
 
-import com.cyberwalkabout.youtube.lib.subscription.R;
 
 /**
  * This is class created to help to handle donate feature (notifications, popups, purchase etc...)

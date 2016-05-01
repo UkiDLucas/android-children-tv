@@ -10,7 +10,6 @@ import android.support.v4.os.AsyncTaskCompat;
 import android.util.Log;
 
 import com.cyberwalkabout.youtube.lib.analytics.FlurryAnalytics;
-import com.cyberwalkabout.youtube.lib.app.R;
 import com.cyberwalkabout.youtube.lib.data.DataLoadReceiver;
 import com.cyberwalkabout.youtube.lib.data.db.DbHelper;
 import com.cyberwalkabout.youtube.lib.subscription.SubscriptionHelper;
@@ -19,6 +18,9 @@ import com.flurry.android.FlurryAgent;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+
+import com.cyberwalkabout.youtube.lib.R;
+
 
 /**
  * @author Maria Dzyokh
