@@ -1,4 +1,4 @@
-package com.cyberwalkabout.youtube.lib.app;
+package pub.uki.youtube.lib.app;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -9,12 +9,12 @@ import android.support.multidex.MultiDexApplication;
 import android.support.v4.os.AsyncTaskCompat;
 import android.util.Log;
 
-import com.cyberwalkabout.youtube.lib.R;
-import com.cyberwalkabout.youtube.lib.analytics.FlurryAnalytics;
-import com.cyberwalkabout.youtube.lib.data.DataLoadReceiver;
-import com.cyberwalkabout.youtube.lib.data.db.DbHelper;
-import com.cyberwalkabout.youtube.lib.subscription.SubscriptionHelper;
-import com.cyberwalkabout.youtube.lib.util.Identity;
+import pub.uki.youtube.lib.R;
+import pub.uki.youtube.lib.analytics.FlurryAnalytics;
+import pub.uki.youtube.lib.data.DataLoadReceiver;
+import pub.uki.youtube.lib.data.db.DbHelper;
+import pub.uki.youtube.lib.subscription.SubscriptionHelper;
+import pub.uki.youtube.lib.util.Identity;
 import com.flurry.android.FlurryAgent;
 import com.google.android.libraries.cast.companionlibrary.cast.VideoCastManager;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
