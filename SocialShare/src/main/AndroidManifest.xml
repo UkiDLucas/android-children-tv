@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pub.uki.sns">
+    package="com.cyberwalkabout.sns">
 
     <application />
 
