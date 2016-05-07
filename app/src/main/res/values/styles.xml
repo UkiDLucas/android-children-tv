@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="ChildrenTVTheme" parent="@style/Theme.AppCompat"/>-->
+    <style name="ChildrenTVTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="ContributionPopup" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    <style name="Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="Dialog">
+        <item name="android:background">@drawable/dialog_bg</item>
+    </style>
+    
+    <style name="container_wh">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/share_list_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    
+    <style name="header_wh">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textColor">#313131</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@drawable/share_list_title_bg</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_marginBottom">-2dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:visibility">visible</item>
+    </style>
+    
+    <style name="elist_wh">
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:fadingEdgeLength">1dp</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    
+    <style name="elist_group_wh">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/shadow</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    
+    <style name="elist_text_item_wh">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#191919</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    
+    <style name="elist_group_bl">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/group_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    
+    <style name="elist_text_item_bl">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    
+    <style name="container_bl">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/share_list_bg_bl</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    
+    
+    <style name="header_bl">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textColor">#313131</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@drawable/share_list_title_bg</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_marginBottom">-2dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    
+    
+    <style name="elist_bl">
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">#ef232a38</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+</resources>

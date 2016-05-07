@@ -1,4 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Children TV</string>
+    <string name="age_group_selection_title">Select the age group of your child</string>
+    <string name="language_selection_title">Choose the language(s) you wish to watch.</string>
+
+    <string name="home_facebook">facebook</string>
+    <string name="home_twitter">twitter</string>
+
+		<string name="about_us">This is a FREE version of this application. Paid version includes large selection of videoEntities, sorting by child\'s age, regular videoEntity updates and more.
+		&lt;br /&gt;
+		&lt;br /&gt;
+		For feedback and more information about this application, as
+		well as
+		mobile phone development and &lt;a
+		href="http://www.chicago-android-training.com"&gt;training&lt;/a&gt;
+		please contact:
+		&lt;br /&gt;
+		&lt;br /&gt;
+		Uki D. Lucas
+		&lt;br /&gt;
+		&lt;br /&gt;
+		&lt;a
+		href="mailto:info@cyberwalkabout.com"&gt;info@cyberwalkabout.com&lt;/a&gt;
+		&lt;br /&gt;
+        (650) 260-4854
+        &lt;br /&gt;
+        &lt;a href="http://chicagoandroid.com/"&gt;ChicagoAndroid.com&lt;/a&gt;
+		</string>
+
+    <string name="message_back_button_press">You EXIT in menu to quit the application.</string>
+    <string name="empty_videos_list">There are no videos for this age and language combination.</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string name="updating_videos">Updating…</string>
+    <string name="error_updating_videos">We\'re sorry, but the application was unable to connect with the server. Please check back shortly.</string>
+
+    <string name="all_videos">All videoEntities</string>
+    <string name="series_id">series</string>
+    <string name="video_id">videoEntity</string>
+    <string name="language">language</string>
+
+    <string name="age_filter_title">Select Age Group</string>
+    <string name="language_filter_title">Select Languages</string>
+
+    <string name="btn_next_title">Next</string>
+    <string name="btn_replay_title">Replay</string>
+    <string name="btn_home_title">Home</string>
+    <string name="btn_back_to_home_title">Back to home</string>
+
+    <!--Age groups-->
+    <string name="age_any">Suits Any Age</string>
+    <string name="age_2">2+</string>
+    <string name="age_4">4+</string>
+    <string name="age_6">6+</string>
+    <string name="age_8">8+</string>
+    <string name="age_all">All</string>
+
+    <string name="btn_info">Info</string>
+    <string name="btn_donate">Donate</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="info_text">Thank you for using ChildrenTV! We hope you enjoy this app as much as we do. Please don\'t hesitate to let us know what you think!</string>
+    <string name="feedback_email_subject">Feedback for ChildrenTV app - Android v.%1$s</string>
+
+    <string name="contribution_popup_text1">We hope you are enjoying this application.</string>
+    <string name="contribution_popup_text2">It takes a lot of effort to collect and regularly review all videoEntities. We are asking you to donate a small amount ($0.99) to help us finance that effort. Users who donated will not see similar pop-ups, nor advertisements on top of videoEntities for a year. Please note we cannot control advertisements inside YouTube videoEntities.</string>
+
+    <string name="contribution_popup_text3">We understand you may not be able to donate at this time, so instead we ask you to help us by sharing this app with your friends.</string>
+    <string name="contribution_popup_text4">You will be able to resume playing soon.</string>
+
+    <string name="msg_exit_dialog">Do you really want to exit the application?</string>
+
+    <string name="share_app_message">I am enjoying ChildrenTV - videoEntities for kids application by #CyberWalkAbout %1$s</string>
+
+    <string name="title_activity_submit_video">Submit Video</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="donate_notification_text">It takes a lot of work to review, rate and add new videos, please support us by purchasing the subscription.</string>
+    <string name="donate_notification_title">Children TV support</string>
+
+    <string name="submit_video_notice">The video will have to go through the review process before it is added to the application.</string>
+    <string name="submit_video_description">Please help us to categorize media, select appropriate age and language.</string>
+    <string name="submit">Submit</string>
+    <string name="thank_you">Thank you</string>
+
+    <string name="buy_subscription">Buy subscription</string>
+    
+    <!-- SHARE ACTIVITY -->
+    
+    <string name="not_supported">Not supported!</string>
+    <string name="share">share</string>
+    <string name="share_selection">Share selection</string>
+    <string name="share_twitter">Share with Twitter via Web</string>
+    <string name="share_facebook">Share with Facebook via Web</string>
+    <string name="message_please_authorize_app">Please authorize this app!</string>
+    <string name="message_loading">Loading...</string>
+    <string name="share_twitter_via_web">Twitter via Web</string>
+    <string name="share_facebook_via_web">Facebook via Web</string>
+    <string name="share_you_may_also_try_with">YOU CAN ALSO TRY:</string>
+    <string name="share_recommended">RECOMMENDED:</string>
+    <string name="share_text_length">Text length:</string>
+    <string name="internal">Internal</string>
+    <string name="error_no_internet_connection">Error! No connection to the Internet is currently
+        available
+    </string>
+    
 </resources>

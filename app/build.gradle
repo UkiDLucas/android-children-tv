@@ -36,7 +36,9 @@ android {
         }
     }
 
-    // rename the apk with version name e.g. ChildrenTV-47.apk
+    /**
+     * rename the apk with version name e.g. ChildrenTV-47.apk
+     */
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def newName = apkPrefix + "-" + output.outputFile.name.replace(".apk", "-${variant.versionCode}.apk");
@@ -46,7 +48,71 @@ android {
 }
 
 dependencies {
-    compile project(':core')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //testCompile 'junit:junit:4.12'
+
+    /**
+     * import org.apache.http.client.entity.UrlEncodedFormEntity;
+     * import org.apache.http.client.methods.HttpPost;
+     * Tried to replace httpclient-4.5.jar, but no luck
+     */
+    //compile 'org.apache.httpcomponents:httpclient:4.5.2'
+    //compile 'org.apache.httpcomponents:httpcore:4.4.4'
+    //compile 'org.apache.httpcomponents:httpclient:4.0-beta1'
+
+    /**
+     * import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
+     */
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+
+    /**
+     * import com.google.appengine.repackaged.org.apache.commons.httpclient.HttpClient;
+     */
+    compile 'com.google.appengine:appengine-remote-api:1.9.37'
+
+    /**
+     * @DatabaseTable ,
+     * @DatabaseField
+     */
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+
+    compile 'oauth.signpost:signpost-commonshttp4:1.2.1.2' //oauth.signpost.commonshttp
+
+    /**
+     * With Google Cloud Endpoints and Chromecast lib we hit dex limit of 65K classes
+     * http://developer.android.com/tools/building/multidex.html
+     */
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    /**
+     *  logging
+     */
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'org.slf4j:slf4j-android:1.7.12'
+
+    /**
+     *    WARNING: Dependency org.apache.httpcomponents:httpclient:4.5.2 is ignored
+     *    for debug as it may be conflicting with the internal version provided by Android.
+     */
+
+    //compile 'com.google.apis:google-api-services-drive:v2-rev170-1.20.0'
+
+    /**
+     *  Required to display left and right sliding menu (consider to substitute with default android navigation drawer)
+     *  https://github.com/UkiDLucas/CastCompanionLibrary-android
+     */
+    compile project(':CastCompanionLibrary-android')
+
+    compile project(':SlidingMenu')
+
+    /**
+     * required for tutorial screen
+     */
+    compile project(':ViewPagerIndicator')
 }
 
 task initReleaseConfig << {

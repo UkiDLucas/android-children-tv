@@ -19,24 +19,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    sourceSets {
-        main {
-            // follow conventions
-            // anifest.srcFile 'AndroidManifest.xml'
-            // java.srcDirs = ['src']
-            // resources.srcDirs = ['src']
-            // res.srcDirs = ['res']
-        }
-    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.android.support:support-v4:23.+'
-    compile 'com.android.support:support-v4:23.2.1'
-    //compile 'com.github.chrisbanes.pulltorefresh:extra-viewpager:2.1.1'
 
+    /**
+     * import android.support.v4.view.
+     */
+    compile 'com.android.support:appcompat-v7:23.3.0'
 }

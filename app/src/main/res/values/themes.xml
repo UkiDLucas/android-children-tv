@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Base.Light" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="AppTheme">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+    </style>
+    
+    
+    <style name="ShareListStyle" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="container">@style/container_wh</item>
+        <item name="header">@style/header_wh</item>
+        <item name="list">@style/elist_wh</item>
+        <item name="list_group">@style/elist_group_wh</item>
+        <item name="text_item">@style/elist_text_item_wh</item>
+    </style>
+    
+    <style name="ShareListStyle.Blue">
+        <item name="android:windowBackground">@color/semitransparent_black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="container">@style/container_bl</item>
+        <item name="header">@style/header_bl</item>
+        <item name="list">@style/elist_bl</item>
+        <item name="list_group">@style/elist_group_bl</item>
+        <item name="text_item">@style/elist_text_item_bl</item>
+    </style>
+
+</resources>

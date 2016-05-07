@@ -1,18 +1,5 @@
-include ':shared',
-        ':backend',
-        ':core',
-        ':app',
-        ':Commons',
-        ':SocialShare',
+include ':app',
         ':SlidingMenu',
         ':ViewPagerIndicator',
         ':GoogleSpreadsheet',
-        ':bakcendimport',
         ':CastCompanionLibrary-android'
-
-//project(':GoogleSpreadsheet').projectDir = new File('modules/GoogleSpreadsheet')
-//project(':Commons').projectDir = new File('modules/Commons')
-//project(':SocialShare').projectDir = new File('modules/SocialShare')
-//project(':SlidingMenu').projectDir = new File('modules/SlidingMenu')
-//project(':ViewPagerIndicator').projectDir = new File('modules/ViewPagerIndicator')
-//project(':CastCompanionLibrary').projectDir = new File('modules/CastCompanionLibrary')
